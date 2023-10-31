@@ -6,7 +6,7 @@ services:
     restart: always
 
     environment:
-      POSTGRES_MULTIPLE_DATABASES: main-reserv1,admin main-reserv2,admin
+      POSTGRES_MULTIPLE_DATABASES: "main-reserv1:admin-reser1, main-reserv2:"
       POSTGRES_DB: main
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: pass
